@@ -1,10 +1,12 @@
 # 🔐 Auto2FA
 Automatically copy SMS 2FA[^1] codes for use in Chrome, Firefox, desktop apps, etc. [How it works](https://github.com/jtbergman/Auto2FA/blob/main/DEVELOPERS.md).
+Also forward code to email using SendGrid
 
 ## 🚀 Installation
 1. Go to the [current release](https://github.com/jtbergman/Auto2FA/releases/tag/v1.0) and download the `Auto2FA.zip` file
 2. Unzip the downloaded file and move `Auto2FA` to your Applications folder
 3. On your iPhone, go to Settings > Messages > Text Message Forwarding and enable forwarding to your Mac
+4. Configure your SendGrid API key SG_API_KEY in the Info.plist file
 
 ## 📸 In Action
 | Notifications | Permissions |
