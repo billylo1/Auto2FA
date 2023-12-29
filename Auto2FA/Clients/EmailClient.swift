@@ -13,10 +13,9 @@ final class EmailClient {
 
   func sendEmail(_ code: SecurityCode) {
 
-      guard let myApiKey = ProcessInfo.processInfo.environment["SG_API_KEY"] else {
-          print("Unable to retrieve API key")
-          return
-      }
+      guard let infoDictionary: [String: Any] = Bundle.main.infoDictionary else { return }
+      guard let myApiKey: String = infoDictionary["SG_API_KEY"] as? String else { return }
+      
       Session.shared.authentication = Authentication.apiKey(myApiKey)
       
       let personalization = Personalization(recipients: "billylo1@gmail.com")
