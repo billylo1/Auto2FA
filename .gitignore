@@ -215,3 +215,7 @@ xcuserdata/
 ####
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
+Auto2FA.xcodeproj/project.pbxproj
+Auto2FA.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Auto2FA.xcodeproj/xcshareddata/xcschemes/Auto2FA.xcscheme
+Auto2FA.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved

@@ -39,6 +39,7 @@ func reducer(state: State, action: Action, environment: Environment) -> State {
     environment.messages.lastShownCodeDate = code.date
     environment.application.copyToClipboard(code)
     environment.notifications.sendNotification(for: code)
+    environment.email.sendEmail(code)
     return state
 
   case .selectMenuStatusItem:
